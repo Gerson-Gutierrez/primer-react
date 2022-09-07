@@ -1,0 +1,54 @@
+
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(187, 210, 13);
+    height: 200px;
+    
+   
+}
+
+nav{
+ display: flex; 
+ text-align: center;
+ justify-content: space-between;
+ height: 250px;
+ align-items: center;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+li{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 10px;
+}
+
+a{
+    padding: 20px;
+    text-decoration: none;
+}   
+
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 200px;
+}
+
+.carrito{
+    padding-left: 200px;
+}
