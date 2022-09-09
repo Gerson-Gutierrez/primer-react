@@ -1,10 +1,25 @@
 import React from "react";
-import Header from "./Components/Header/Header"
+import Navbar from "./Components/Navbar/Navbar"
+import ItemListContainer from "./Containers/ItemListContainer/ItemListContainer";
+
+
 
 const App = () =>{
+ 
+   
+  const mensaje = "Hola!!! Bienvenidos a Italian Vaqueria"
+  
+
+
   return (
-    <Header />
-  )
+      <>
+        <Navbar/>
+        
+        <ItemListContainer greeting= {mensaje}/>
+      </>
+   
+    ) 
+
 }
 
 export default App  
