@@ -1,7 +1,8 @@
 import React from "react";
 import Navbar from "./Components/Navbar/Navbar"
-import ItemListContainer from "./Containers/ItemListContainer/ItemListContainer";
-import ItemCount from "./ItemCount/index"
+import ItemListContainer from "./Components/ItemListContainer";
+import { ItemCount } from "./ItemCount/index"
+
 
 
 
@@ -10,6 +11,7 @@ const App = () => {
  
    
   const mensaje = "Hola!!! Bienvenidos a Italian Vaqueria"
+
   
   
 
@@ -17,10 +19,10 @@ const App = () => {
   return (
       <>
         <Navbar/>
-        <ItemListContainer greeting= {mensaje}/>
-        {/* <ItemCount initial={1} stock={6} onAdd={onAdd} /> */}
-        <ItemCount initial={1} stock={10} onAdd={() => {}}/>
-      </>
+          <ItemListContainer/> 
+        {/* <ItemCount initial={1} stock={10} onAdd={() => {}}/> */}
+       
+      </> 
    
     ) 
 
