@@ -16,7 +16,7 @@ const ItemListContainer = ({greeting}) => {
   const [loading, setLoading]= useState(true)
 
   useEffect(() => {
-      customFetch(products)
+      customFetch(products, 1200)
        .then(res => {
         setListProducts(res)
         setLoading(false)
@@ -27,7 +27,7 @@ const ItemListContainer = ({greeting}) => {
   }, [])
   
    
-  return (
+  return (   
     <>
        <h1>{greeting}</h1>
        {
