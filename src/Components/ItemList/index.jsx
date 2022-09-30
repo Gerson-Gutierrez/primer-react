@@ -3,7 +3,7 @@ const ItemList = ({ listProducts }) => {
    
  return(
     <>
-       {listProducts.map((prod, i) => <Item key={`${prod.product}-${i}`} product={prod} />)}
+       {listProducts.map((ropa, i) => <Item key={`${ropa.product}-${i}`} product={ropa} />)}
     </>
  )
 

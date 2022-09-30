@@ -1,19 +1,29 @@
 
 .cart{
-    width: 100%;
-    height: 500%;
+    width: 247px;
+    height: 430px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
 }
 .cartMain{
     background-color: red;
     width: 250px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
 .cartMain img {
     width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: flex;
+    justify-content: center;
 }
 
 .flex{

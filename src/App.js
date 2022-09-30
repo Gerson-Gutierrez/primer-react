@@ -27,21 +27,14 @@ const App = () => {
           <Routes>
              
             <Route path='/' element={<ItemListContainer />} /> 
-            <Route path='/ItemDetail' element={<ItemDetailContainer/>} />
+            <Route path='/listProducts' element={<ItemDetailContainer/>} />
                
           </Routes>   
           
       </> 
    
-   ) 
+  ) 
    
 }
 
 export default App  
-
-
-
-
-
-
-{/* <ItemCount initial={1} stock={10} onAdd={() => {}}/> */}

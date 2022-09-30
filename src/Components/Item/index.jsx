@@ -23,3 +23,6 @@ const Item = ({ product }) => {
 }
 
 export { Item }
+
+
+

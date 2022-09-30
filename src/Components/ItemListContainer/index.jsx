@@ -1,9 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { ItemList } from "../ItemList"; 
 import { products } from "../../assets/productos";
 import { customFetch } from "../../utils/customFetch";
 import { useState, useEffect } from "react";
-import '../Item/item.css'
+// import '../Item/item.css'
+import './fff.css'
 
 
 import CircularProgress from '@mui/material/CircularProgress';
@@ -35,11 +37,11 @@ const ItemListContainer = ({greeting}) => {
         <CircularProgress />
         :
 
-        <div className='flex'>
-          <ItemList listProducts={listProducts} /> 
+        <div className='flex itemlistcontainer '>
 
+          <ItemList listProducts={listProducts} />
+           
         </div>
-
        }
     </>
   )

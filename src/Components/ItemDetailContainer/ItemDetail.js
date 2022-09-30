@@ -1,19 +1,22 @@
+import { useState } from "react"
 import "./ItemDetail.css"
-const ItemDetail = ({ products }) => {
+
+const ItemDetail = ({ ropa }) => {
    
  return(
     <>
+   
         <section className="espacio">
         <article className="cartaa">
             <picture className="image">
-                <img src= {products.image} alt="" />
+                <img src= {ropa.image} alt="" />
             </picture>
             <figcaption>
                 <div>
-                    <h2>ID:{products.id}</h2>
-                    <h1>Price:{products.price}</h1>
+                    <h2>ID:{ropa.id}</h2>
+                    <h1>Price:{ropa.price}</h1>
                 </div>
-                <p>{products.product}</p>
+                <p>{ropa.product}</p>
                    <br />
                 <button className="botondecompra">ADD TO CART</button>
             </figcaption>
@@ -25,3 +28,7 @@ const ItemDetail = ({ products }) => {
 }
 
 export { ItemDetail }
+
+
+
+
