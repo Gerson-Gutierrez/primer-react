@@ -1,0 +1,305 @@
+// import
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+// estilos del header
+header {
+
+    background-size: auto 150px;
+    background-color: #44496A;
+    border-bottom: solid 2px;
+    border-bottom-color: #b8d053;
+    nav {
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+}
+// estilos del logo
+.logoContainer {
+     display: flex;
+     justify-content: center;
+   padding:  1.2rem  0;
+    &:hover {
+        transition: 1s;
+        background-color: #5c79999b;   
+    }
+    .logo {
+        width: 65%;
+    }
+}
+
+
+
+.menu {
+    justify-content: space-between;
+    .menu__item {
+        padding:  1.7rem  0;
+        &:hover {
+            transition: 1s;
+            background-color: #5c79999b;
+        }
+        .menu__link {   
+            font-family: 'Staatliches', cursive;
+            font-size: 3em;
+            padding: 1.5rem;
+            position: relative;
+        }
+    }
+}
+
+.menuSecond {
+    width: 110px;
+    height: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 20px;
+
+        &:hover {
+            border-radius: 10px;
+            background-color: #5c79999b;
+        }
+
+        .menuSecond__link {
+            font-family: 'Staatliches', cursive;
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+
+    }
+}
+.sub-menu{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 800px;
+    height: 195px;
+    left: 600px;
+    margin-top: 1rem;
+   
+}
+.menu__item:hover{
+    .sub-menu{
+        display: block;
+    }
+}
+
+
+
+.mainBuscador {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 90px;
+   
+    
+
+    :hover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 90px;
+        background-color: #5c79999b;
+    }
+
+    .lupa {
+        color: #fff;
+        font-size: 2.5em;
+        cursor: pointer;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+
+.fa-circle {
+
+    color: #fff;
+    font-size: 0.7em;
+}
+
+.sectionCarrito{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 90px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    cursor: pointer;
+    
+    .carritoMain {
+        position: relative;
+        background-image: url(../../assets/carrito.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        color: #000;
+        
+        
+    
+        .cantidadCarrito {
+            position: absolute;
+            bottom: 1px;
+        }
+    }
+}
+
+.sectionCarrito:hover{
+    background-color:  #b7d053bd;
+}
+
+
+
+.listCategories{
+    justify-content: space-between;
+    section{
+        gap: 1em;
+        justify-content: space-around;
+    }
+    li{
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        text-align: center;
+        color: #4b6b8d;
+        font-family: 'Staatliches', cursive;
+        font-weight: 100;
+        
+    }
+    .ppp:hover{
+        background-color: #5c79999b;
+        cursor: pointer;
+        color: #fff;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .navbar {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-around;
+//     min-height: 12vh;
+//     background-color: #294;
+
+
+
+//     .logo {
+//         width: 300px;
+//         height: 65px;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+
+//         img {
+//             height: 60px;
+//             width: 300px;
+//         }
+
+//     }
+
+
+//     .menu {
+//         display: flex;
+//         padding: 4px;
+
+
+//         .menu__item {
+//             padding: 10px 35px;
+//             list-style-type: none;
+//             transition: 0.3s;
+
+
+//             &:hover {
+//                 background-color: rgb(160, 180, 135);
+
+
+//             }
+
+//             a {
+//                 font-size: 1.3rem;
+//                 color: #f3f3f3;
+//                 font-weight: 600;
+//             }
+
+//         }
+
+
+//     }
+// }

@@ -1,16 +1,17 @@
-export const customFetch = (listProducts, stallTime = 0, id) => {
+export const customFetch = (products, stallTime = 0, id) => {
     return new Promise((resolve, reject) => 
         setTimeout(() => {
             try {
-                if (listProducts) {
+                if (products) {
                     if (id) {
-                        const product = listProducts.find((ropa) => ropa.id == id);
-                        resolve(product);
+                        const item = products.find((producto) => producto.id == id);
+                        resolve(item);
                     } else {
-                        resolve(listProducts);
+                        resolve(products);
                     }
                 }
-            } catch (err) {
+            } 
+            catch (err) {
                 reject(err);
             }
 
@@ -21,10 +22,3 @@ export const customFetch = (listProducts, stallTime = 0, id) => {
 
 
 
-// export const customFetch = (products) => {
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() =>{
-//          resolve(products)
-//         }, 2000)
-//     })
-// } 

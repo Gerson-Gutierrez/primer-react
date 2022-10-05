@@ -1,40 +1,35 @@
-import React from "react";
-import Navbar from "./Components/Navbar/Navbar"
-import ItemListContainer from "./Components/ItemListContainer";
-import { ItemCount } from "./ItemCount/index"
-import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer";
-import { Routes, Route } from "react-router-dom";
+import NavBar from "./Components/Navbar/Navbar";
+import ItemListContainer from "./Containers/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./Containers/ItemDetailContainer";
+import { BrowserRouter,Routes,Route, } from "react-router-dom";
+import CartProvider from "./Context/CartContext";
+import CartContainer from "./Containers/CartContainer"
 
+const App = () =>{
+  const onAdd =(contador)=>{
+    
+  }
+  onAdd()
 
- 
-
-
-
-const App = () => {
- 
-   
-  const mensaje = "Hola!!! Bienvenidos a Italian Vaqueria"
-
-  
-  
-
-
-  return (
-      <> 
-          
-
-            <Navbar/>
-          <Routes>
-             
-            <Route path='/' element={<ItemListContainer />} /> 
-            <Route path='/listProducts' element={<ItemDetailContainer/>} />
-               
-          </Routes>   
-          
-      </> 
-   
-  ) 
-   
+  return(
+    <>
+    <BrowserRouter>
+    <CartProvider>
+     <NavBar />
+     <Routes>
+      <Route path="/" element={<ItemListContainer/>}  />
+      <Route path="/categoria/:IdCategoria" element={<ItemListContainer/>} />
+      <Route path="/product/:id" element={<ItemDetailContainer/>} />
+      <Route path="/cart" element={<CartContainer/>}/>
+     </Routes>
+      
+    </CartProvider>
+    </BrowserRouter>
+    </>
+  )
 }
 
-export default App  
+export default App;
+
+
+ 
