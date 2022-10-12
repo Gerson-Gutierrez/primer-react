@@ -62,12 +62,53 @@ export const products = [{
    {
     id: "7",
     image: "https://static.zara.net/photos///2022/V/0/1/p/9632/060/404/2/w/850/9632060404_6_1_1.jpg?ts=1650273432241",
+    imageDetail: "https://static.zara.net/photos///2022/V/0/1/p/9632/060/404/2/w/850/9632060404_6_1_1.jpg?ts=1650273432241",
     product: "parka larga bolsillos",
+    productDetail: "parka larga bolsillos",
     category: "mujer",
     price: 15000,
-    stock:6
-   }
-
+    stock:6,
+   },
+   {
+    id: "8",
+    image: "https://static.zara.net/photos///2022/S/0/1/p/4029/004/406/2/w/850/4029004406_6_1_1.jpg?ts=1663315215528",
+    imageDetail: "https://static.zara.net/photos///2022/S/0/1/p/4029/004/406/2/w/850/4029004406_6_1_1.jpg?ts=1663315215528",
+    product: "chaleco denim crop",
+    productDetail: "chaleco denim crop",
+    category: "mujer",
+    price: 5000,
+    stock:7,
+   }, 
+   {
+    id: "9",
+    image: "https://static.zara.net/photos///2022/V/0/1/p/2010/774/250/2/w/850/2010774250_6_1_1.jpg?ts=1651498498397",
+    imageDetail: "https://static.zara.net/photos///2022/V/0/1/p/2010/774/250/2/w/850/2010774250_6_1_1.jpg?ts=1651498498397",
+    product: "blazer cropped lazadas",
+    productDetail: "blazer cropped lazadas",
+    category: "mujer",
+    price: 12000,
+    stock:4,
+   },
+   {
+    id: "10",
+    image: "https://static.zara.net/photos///2022/S/0/1/p/3608/529/620/2/w/850/3608529620_6_1_1.jpg?ts=1661237130977",
+    imageDetail: "https://static.zara.net/photos///2022/S/0/1/p/3608/529/620/2/w/850/3608529620_6_1_1.jpg?ts=1661237130977",
+    product: "blazer entallada cruzada",
+    productDetail: "blazer entallada cruzada",
+    category: "mujer",
+    price:35000,
+    stock:6,
+   },
+   {
+    id: "11",
+    image: "https://static.zara.net/photos///2022/V/0/1/p/4688/326/712/2/w/850/4688326712_6_1_1.jpg?ts=1648109116742",
+    imageDetail: "https://static.zara.net/photos///2022/V/0/1/p/4688/326/712/2/w/850/4688326712_6_1_1.jpg?ts=1648109116742",
+    product: "vestido con lino elastico",
+    productDetail: "vestido con lino elastico",
+    category: "mujer",
+    price: 14000,
+    stock: 4,
+   },
 
 ]
 
@@ -79,34 +120,10 @@ export const products = [{
 
 
 // 
-// {
-//     id: "8",
-//     image: "https://static.zara.net/photos///2022/S/0/1/p/4029/004/406/2/w/850/4029004406_6_1_1.jpg?ts=1663315215528",
-//     product: "chaleco denim crop",
-//     category: "mujer",
-//     price: 5000
-// },
-// {
-//     id: "9",
-//     image: "https://static.zara.net/photos///2022/V/0/1/p/2010/774/250/2/w/850/2010774250_6_1_1.jpg?ts=1651498498397",
-//     product: "blazer cropped lazadas",
-//     category: "mujer",
-//     price: 12000
-// },
-// {
-//     id: "10",
-//     image: "https://static.zara.net/photos///2022/S/0/1/p/3608/529/620/2/w/850/3608529620_6_1_1.jpg?ts=1661237130977",
-//     product: "blazer entallada cruzada",
-//     category: "mujer",
-//     price:35000
-// },
-// {
-//     id: "11",
-//     image: "https://static.zara.net/photos///2022/V/0/1/p/4688/326/712/2/w/850/4688326712_6_1_1.jpg?ts=1648109116742",
-//     product: "vestido con lino elastico",
-//     category: "mujer",
-//     price: 14000
-// },
+// 
+// 
+// 
+// 
 // {
 //     id: "12",
 //     image: "https://static.zara.net/photos///2022/S/0/1/p/7102/900/800/2/w/850/7102900800_6_1_1.jpg?ts=1658394586959",
