@@ -4,6 +4,7 @@ import ItemDetailContainer from "./Containers/ItemDetailContainer";
 import { BrowserRouter,Routes,Route, } from "react-router-dom";
 import CartProvider from "./Context/CartContext";
 import CartContainer from "./Containers/CartContainer"
+import Form from "./Components/Form";
 
 const App = () =>{
   const onAdd =(contador)=>{
