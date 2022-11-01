@@ -31,5 +31,3 @@ export default CartItem;
 
 
 
-{/* <h1> {item.item.product} </h1>
-<button onClick={() => removeItem(item) } > quitar</button> */}
