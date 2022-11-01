@@ -30,15 +30,8 @@ const ItemDetailContainer = () => {
 
 
 
-    // customFetch(products, 0, parseInt(id)).then((res) => setProducto(res))
+    
   }, [id])
-
-
-
-
-
-
-
 
   console.log(producto)
 

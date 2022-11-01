@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 .articulo {
     width: 100%;
@@ -23,11 +23,6 @@
         }
     }
 }
-
-
-
-
-
 
 
 .css-button-shadow-border-sliding--sky {
@@ -146,7 +141,7 @@
 
 
 .itemdetail {
-    font-family: 'Staatliches', cursive;
+    font-family: 'Montserrat', sans-serif;
     font-size: 3em;
     padding: 1.5rem;
     color: #70a7c5;
@@ -180,7 +175,7 @@
             height: 510px;
 
             h2 {
-                font-family: 'Poppins', sans-serif;
+                font-family: 'Montserrat', sans-serif;
                 font-size: 1em;
                 color: #70a7c5;
             }
@@ -206,8 +201,8 @@
                 // padding-right: 80px;
             }
 
-            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-
+        
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
             .pricing_and_amount {
                 background-color: #e6ebf1;
@@ -218,7 +213,7 @@
 
                 p {
                     color: #4b6b8d;
-                    font-family: 'Roboto', sans-serif;
+                    font-family: 'Montserrat', sans-serif;
                     font-size: 0.5em;
                     padding: 10px 10px 10px 10px;
                     line-height: 150%;
@@ -226,15 +221,18 @@
                 }
             }
 
-
+            .button-buy{
+                display: flex;
+                flex-direction: column;
+                width: 350px;
+                height: 290px;
+               
+                justify-content: center;
+                align-items: center;
+            }
 
         }
     }
-
-
-
-
-
 
 }
 

@@ -25,7 +25,7 @@ const ItemDetail = ({ producto }) => {
         <>
 
             <section className="itemdetail container" >
-                <h1>Clothes</h1>
+                <h1>{producto.category}</h1>
                 <article className=" item flex-row ">
                     <picture className="imageDetail">
                         <img src={producto.imageDetail} alt="" />
@@ -33,18 +33,24 @@ const ItemDetail = ({ producto }) => {
                     <article className="description" >
 
                         <article className="description_product" >
-                            <h2> {producto.productDetail}</h2>
-                            
+                            <h2> {producto.productDetail}</h2>                            
                         </article>
                         <h3> ${producto.price}</h3>
                         <article className="pricing_and_amount  " >
-                            <p>clothes</p>
+                            <p>{producto.description}</p>
+                            <p>{producto.descriptionSecond}</p>
 
                             {
                                 irAlCarrito
-                                    ? <Link to='/cart'><button>Finalizar Compra</button></Link>
-                                    : <ItemCount initial={1} stock={producto.stock} onAdd={onAdd} />
+                                    ?  
+                                      <section className="button-buy">
+                                        <h3>✓ Added to cart!</h3>
+                                         <Link to='/cart'>
+                                         <button className="en " >View cart ›</button>
+                                         </Link>
+                                      </section>
 
+                                    : <ItemCount initial={1} stock={producto.stock} onAdd={onAdd} />
 
                             }
 

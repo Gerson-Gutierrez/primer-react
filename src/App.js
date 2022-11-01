@@ -16,13 +16,14 @@ const App = () =>{
     <BrowserRouter>
     <CartProvider>
      <NavBar />
+     <main>
      <Routes>
       <Route path="/" element={<ItemListContainer/>}  />
       <Route path="/categoria/:IdCategoria" element={<ItemListContainer/>} />
       <Route path="/product/:id" element={<ItemDetailContainer/>} />
       <Route path="/cart" element={<CartContainer/>}/>
-     </Routes>
-      
+      </Routes> 
+     </main>
     </CartProvider>
     </BrowserRouter>
     </>

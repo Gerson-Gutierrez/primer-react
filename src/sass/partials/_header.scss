@@ -5,9 +5,10 @@
 header {
 
     background-size: auto 150px;
-    background-color: #44496A;
+    background-color: white;
     border-bottom: solid 2px;
-    border-bottom-color: #b8d053;
+    border-bottom-color: white;
+    
     nav {
         width: 100%;
         align-items: center;
@@ -34,16 +35,18 @@ header {
 .menu {
     justify-content: space-between;
     .menu__item {
+        
         padding:  1.7rem  0;
         &:hover {
             transition: 1s;
-            background-color: #5c79999b;
+            background-color: rgb(233, 219, 219);
         }
         .menu__link {   
-            font-family: 'Staatliches', cursive;
+            font-family: 'Montserrat', sans-serif;
             font-size: 3em;
             padding: 1.5rem;
             position: relative;
+            color: #000;
         }
     }
 }
@@ -54,6 +57,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     
+    
 
     &__item {
         display: flex;
@@ -61,16 +65,20 @@ header {
         justify-content: center;
         width: 50px;
         height: 20px;
+       
 
         &:hover {
             border-radius: 10px;
             background-color: #5c79999b;
+            
         }
 
         .menuSecond__link {
-            font-family: 'Staatliches', cursive;
+            font-family: 'Montserrat', sans-serif;
             font-size: 1.5em;
             font-weight: 600;
+            color: #000;
+        
         }
 
     }
@@ -83,6 +91,7 @@ header {
     height: 195px;
     left: 600px;
     margin-top: 1rem;
+ 
    
 }
 .menu__item:hover{
@@ -113,7 +122,7 @@ header {
     }
 
     .lupa {
-        color: #fff;
+        color:black;
         font-size: 2.5em;
         cursor: pointer;
         padding-bottom: 30px;
@@ -131,7 +140,7 @@ header {
 }
 
 .sectionCarrito{
-    color: #fff;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,8 +192,8 @@ header {
         align-items: center;
         font-size: 2rem;
         text-align: center;
-        color: #4b6b8d;
-        font-family: 'Staatliches', cursive;
+        color: #000;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 100;
         
     }

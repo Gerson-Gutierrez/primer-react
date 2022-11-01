@@ -3,8 +3,12 @@ import { CartContext } from "../../Context/CartContext";
 import CartItem from "../../Components/CartItem";
 import { Link } from "react-router-dom";
 
+
+
+
+
 const CartContainer = () => {
-    const { Cart, removeItem } = useContext(CartContext)
+    const { Cart, removeItem, total, clear } = useContext(CartContext)
 
 
     return (
@@ -38,11 +42,12 @@ const CartContainer = () => {
                                     <div className="checkout-top">
                                         <div className="subtotal  ">
                                             Subtotal:
-                                            <span className="total">
-                                                $144.00
-                                            </span>
+                                            <span className="total">${total.toFixed(2)}</span>
                                         </div>
-                                        <button className="comprar"  >Comprar</button>
+                                        <Link className="c" to="/Form" >
+                                            <button  className="comprar" >PROCEED TO CHECKOUT » </button>
+                                        </Link>
+                                        <button onClick={clear} className="clear">CLEAR CART</button>
                                     </div>
                                 </article>
                             </section>

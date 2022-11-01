@@ -23,6 +23,8 @@ const ItemListContainer = () => {
 
     const productsCollection = collection(database, 'products')
     const productCategory = query(productsCollection, where('category', '==', `${IdCategoria}`))
+
+
     let url = (IdCategoria === undefined ? productsCollection : productCategory)
     getDocs( url )
     .then((data) => {
@@ -35,24 +37,6 @@ const ItemListContainer = () => {
         setListProducts(lista)
     })
 
-
-
-
-
-
-
-
-
-
-
-    // const db = IdCategoria
-    //   ? products.filter(product => product.category == IdCategoria)
-    //   : products;
-    //  customFetch(db)
-    //   .then(res => {
-    //     setLoading(false)
-    //     setListProducts(res)
-    // } )
 
   }, [IdCategoria])
 
