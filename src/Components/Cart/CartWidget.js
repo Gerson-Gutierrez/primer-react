@@ -10,7 +10,6 @@ const CartWidget = () => {
       <LocalMallIcon   sx={{ fontSize: 35 }}  />
       <span>{Cart.lenght}</span>
     </>
-
   );
 }
 

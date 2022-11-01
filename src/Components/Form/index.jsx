@@ -1,6 +1,5 @@
 import { useState, useContext } from "react";
 import { CartContext } from "../../Context/CartContext";
-import CartItem from "../../components/CartItem";
 import { Link } from "react-router-dom";
 import { database } from "../../firebase/firebase"
 import { collection, addDoc, serverTimestamp, doc, updateDoc } from "firebase/firestore";

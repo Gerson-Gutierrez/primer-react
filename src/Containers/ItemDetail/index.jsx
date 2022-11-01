@@ -7,14 +7,14 @@ const ItemDetail = ({ producto }) => {
 
     const [irAlCarrito, setIrAlCarrito] = useState(false);
 
-    const { addItem,Cart } = useContext(CartContext)
+    const { addItem, Cart } = useContext(CartContext)
 
 
     const onAdd = (contador) => {
         addItem(producto,contador)
         setIrAlCarrito(true)
     };
-    console.log(Cart)
+   
 
 
 
@@ -33,7 +33,8 @@ const ItemDetail = ({ producto }) => {
                     <article className="description" >
 
                         <article className="description_product" >
-                            <h2> {producto.productDetail}</h2>                            
+                            <h2> {producto.productDetail}</h2>
+                            <h6>by {producto.autor}</h6>                        
                         </article>
                         <h3> ${producto.price}</h3>
                         <article className="pricing_and_amount  " >
@@ -44,7 +45,7 @@ const ItemDetail = ({ producto }) => {
                                 irAlCarrito
                                     ?  
                                       <section className="button-buy">
-                                        <h3>✓ Added to cart!</h3>
+                                         <h3>✓ Added to cart!</h3>
                                          <Link to='/cart'>
                                          <button className="en " >View cart ›</button>
                                          </Link>

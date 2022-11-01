@@ -28,12 +28,7 @@ const ItemDetailContainer = () => {
         )
       })
 
-
-
-    
   }, [id])
-
-  console.log(producto)
 
 
   return (<>

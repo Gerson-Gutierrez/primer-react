@@ -54,10 +54,6 @@ const CartContainer = () => {
                         </section>
 
                     </>
-
-
-
-
                 </>
             )}
 
@@ -68,18 +64,3 @@ const CartContainer = () => {
 export default CartContainer;
 
 
-
-
-
-
-
-
-{/* <div>cart</div>
-{ Cart
-? Cart.map(( item ) => (
-
-    <CartItem item={item} removeItem={removeItem} key={item.item.id}   />
-    
-
-))
-: "vacio"} */}

@@ -39,7 +39,10 @@ const ItemCount = ({ stock, onAdd, initial }) => {
                   <span>{contador}</span>
                   <button onClick={restar} className="css-button-3d--rose" >RESTAR</button>
                </section>
-               <button onClick={comprar} className="css-button-shadow-border-sliding--sky">AGREGAR AL CARRITO</button>
+               <section className="comprador" >
+                  <button onClick={comprar} className="en">ADD TO CART</button>
+                  <button className="wishList" >  Wish List 🧡</button>
+               </section>
             </article>
          </div>
 
